@@ -2,7 +2,9 @@ name: Daily 생기부 정보 브리핑
 
 on:
   schedule:
-    - cron: '0 22 * * *'
+    - cron: '0 22 * * *'   # 07:00 KST
+    - cron: '0 3 * * *'    # 12:00 KST
+    - cron: '0 9 * * *'    # 18:00 KST
   workflow_dispatch:
 
 jobs:
