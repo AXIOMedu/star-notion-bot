@@ -25,8 +25,7 @@ jobs:
 
       - name: Playwright 브라우저 설치
         run: |
-          playwright install chromium
-          playwright install-deps chromium
+          playwright install chromium --with-deps
 
       - name: 생기부 브리핑 실행
         env:
