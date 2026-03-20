@@ -7,7 +7,7 @@ on:
 
 jobs:
   crawl-and-post:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     timeout-minutes: 15
 
     steps:
@@ -25,7 +25,8 @@ jobs:
 
       - name: Playwright 브라우저 설치
         run: |
-          playwright install chromium --with-deps
+          playwright install chromium
+          playwright install-deps chromium
 
       - name: 생기부 브리핑 실행
         env:
